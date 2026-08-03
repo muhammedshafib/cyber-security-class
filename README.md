@@ -1,1 +1,1 @@
-# cyber-security-class
+# cyber-security fundamentals
