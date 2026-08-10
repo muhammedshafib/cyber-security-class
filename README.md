@@ -245,6 +245,9 @@ I'm learning cybersecurity one concept, one lab, and one challenge at a time. ðŸ
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
+<a href="https://www.naukri.com/mnjuser/profile?id=&altresid">
+<img src="https://img.shields.io/badge/Naugri-YourColor?style=for-the-badge&logo=naugri&logoColor=white" alt="Naugri Badge"/>   
+
 </p>
 
 ---
