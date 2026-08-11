@@ -25,7 +25,7 @@ network protocols using Wireshark.
 10. Save the capture file.
 
 ### Protocols Identified:
-ARP
+ARP.
 DNS
 ICMP
 TCP
