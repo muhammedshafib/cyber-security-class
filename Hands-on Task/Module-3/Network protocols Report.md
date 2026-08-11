@@ -25,14 +25,19 @@ network protocols using Wireshark.
 10. Save the capture file.
 
 ### Protocols Identified:
-ARP.
+ARP
+
 DNS
+
 ICMP
+
 TCP
+
 UDP
+
 TLS/HTTPS
+
 DHCP
 
-### Result:
-Successfully captured network traffic and identified
+### Result:Successfully captured network traffic and identified
 different network protocols using Wireshark.
