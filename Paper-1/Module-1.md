@@ -10,7 +10,7 @@ Think of it like this:
 > 🛡️ **Integrity** → Is the data correct and unchanged?
 > ⚡ **Availability** → Can authorized users access it when needed?
 
-![Image](https://images.openai.com/static-rsc-4/5YdShMhjXE_pyb2c8O1E-ZM7N533s7dYqJBE_JvesyUZ4vledxQYf1AbHSd3FSTnpB6oHzrcmzPJEnxQLFWqSkvxt7TC7gjq0NK6WaMQOB4mpW7IMD5EgXTtsKMOKfv8jLLo5wAcwnvBDwdAwZy4UlaiPQhXlGxKpcQrJpqIYUeYM0EqzrYmrYZfx-8fji1d?purpose=halfsize)
+![Image](https://images.openai.com/static-rsc-4/5YdShMhjXE_pyb2c8O1E-ZM7N533s7dYqJBE_JvesyUZ4vledxQYf1AbHSd3FSTnpB6oHzrcmzPJEnxQLFWqSkvxt7TC7gjq0NK6WaMQOB4mpW7IMD5EgXTtsKMOKfv8jLLo5wAcwnvBDwdAwZy4UlaiPQhXlGxKpcQrJpqIYUeYM0EqzrYmrYZfx-8fji1d?purpose=fullsize)
 
 ![Image](https://images.openai.com/static-rsc-4/aQao5wHe-NxoRcoNm9GrfkGXjh32aRE5Rxm-qEeiI05rJhSnueY1HxWFjAOBgwBix-XgPw8LmJfe6qjJeexgrkqr95SKNqsM7Nmz3HtrXhPJIBb3ihlg27PVCK2GeFTEdbQvwM155Ar3S2ux1RsOvNxLJoTKWcxvLNrZsGh3yvpajYYqNXS2ggXbvQ9Lfp4G?purpose=fullsize)
 
