@@ -1,0 +1,936 @@
+# 4. Understand Security Data Processing
+
+**Security data processing** means taking security information, organizing it, analyzing it, identifying important events, and generating alerts automatically.
+
+A simple workflow is:
+
+```text
+Security Data
+     ↓
+Structured Data
+     ↓
+CSV / JSON
+     ↓
+Analyze
+     ↓
+Categorize Events
+     ↓
+Generate Alerts
+```
+
+Let's learn each section with **simple theory + practical Python code**.
+
+---
+
+# 4.1 Structured Data
+
+## What is structured data?
+
+**Structured data** is information arranged in an organized format so that a computer can easily read and process it.
+
+For example, unstructured information:
+
+```text
+Alice logged in from 192.168.1.10
+```
+
+Structured information:
+
+```python
+event = {
+    "user": "Alice",
+    "ip": "192.168.1.10",
+    "event": "login"
+}
+```
+
+Now each piece of information has a name.
+
+```text
+user  → Alice
+ip    → 192.168.1.10
+event → login
+```
+
+This makes analysis easier.
+
+---
+
+## Python Dictionary as Structured Data
+
+```python
+event = {
+    "user": "Alice",
+    "ip": "192.168.1.10",
+    "event": "failed_login"
+}
+
+print(event["user"])
+print(event["ip"])
+print(event["event"])
+```
+
+Output:
+
+```text
+Alice
+192.168.1.10
+failed_login
+```
+
+### Why is this useful in cybersecurity?
+
+Security events often contain fields such as:
+
+```text
+timestamp
+username
+IP address
+event type
+status
+severity
+```
+
+Example:
+
+```python
+event = {
+    "timestamp": "2026-09-13 10:30",
+    "username": "admin",
+    "ip": "192.168.1.10",
+    "event": "failed_login",
+    "severity": "medium"
+}
+```
+
+Now Python can easily inspect individual fields.
+
+---
+
+# 4.2 CSV Analysis
+
+## What is CSV?
+
+**CSV = Comma-Separated Values**
+
+It is commonly used to store table-like data.
+
+Example:
+
+```text
+username,ip,event
+alice,192.168.1.10,failed_login
+bob,192.168.1.20,successful_login
+admin,192.168.1.10,failed_login
+```
+
+Think of it as a simple table:
+
+| username | IP           | event            |
+| -------- | ------------ | ---------------- |
+| alice    | 192.168.1.10 | failed_login     |
+| bob      | 192.168.1.20 | successful_login |
+| admin    | 192.168.1.10 | failed_login     |
+
+---
+
+## Reading CSV with Python
+
+Python has a built-in `csv` module.
+
+```python
+import csv
+
+with open("security.csv", "r") as file:
+
+    reader = csv.DictReader(file)
+
+    for row in reader:
+        print(row)
+```
+
+The result is approximately:
+
+```text
+{'username': 'alice', 'ip': '192.168.1.10', 'event': 'failed_login'}
+```
+
+---
+
+## Accessing Individual Fields
+
+```python
+import csv
+
+with open("security.csv", "r") as file:
+
+    reader = csv.DictReader(file)
+
+    for row in reader:
+
+        print("User:", row["username"])
+        print("IP:", row["ip"])
+        print("Event:", row["event"])
+```
+
+Output:
+
+```text
+User: alice
+IP: 192.168.1.10
+Event: failed_login
+
+User: bob
+IP: 192.168.1.20
+Event: successful_login
+```
+
+---
+
+# Practical CSV Analysis
+
+Suppose `security.csv` contains:
+
+```text
+username,ip,event
+alice,192.168.1.10,failed_login
+bob,192.168.1.20,successful_login
+admin,192.168.1.10,failed_login
+root,192.168.1.10,failed_login
+```
+
+We can count failed logins:
+
+```python
+import csv
+
+failed = 0
+
+with open("security.csv", "r") as file:
+
+    reader = csv.DictReader(file)
+
+    for row in reader:
+
+        if row["event"] == "failed_login":
+            failed = failed + 1
+
+print("Failed logins:", failed)
+```
+
+Output:
+
+```text
+Failed logins: 3
+```
+
+### What did we combine?
+
+```text
+CSV
+ ↓
+DictReader
+ ↓
+Loop
+ ↓
+Condition
+ ↓
+Counter
+ ↓
+Report
+```
+
+This is security data processing.
+
+---
+
+# 4.3 JSON Analysis
+
+## What is JSON?
+
+**JSON = JavaScript Object Notation**
+
+It is a very common format for structured data.
+
+Example:
+
+```json
+{
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "event": "failed_login"
+}
+```
+
+Python can read JSON using:
+
+```python
+import json
+```
+
+---
+
+## Reading JSON
+
+Create:
+
+```text
+security.json
+```
+
+with:
+
+```json
+{
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "event": "failed_login"
+}
+```
+
+Python:
+
+```python
+import json
+
+with open("security.json", "r") as file:
+
+    data = json.load(file)
+
+print(data)
+```
+
+---
+
+## Accessing JSON Data
+
+```python
+print(data["username"])
+print(data["ip"])
+print(data["event"])
+```
+
+Output:
+
+```text
+alice
+192.168.1.10
+failed_login
+```
+
+---
+
+# JSON with Multiple Events
+
+Security systems often have many events.
+
+Example:
+
+```json
+[
+    {
+        "username": "alice",
+        "ip": "192.168.1.10",
+        "event": "failed_login"
+    },
+    {
+        "username": "bob",
+        "ip": "192.168.1.20",
+        "event": "successful_login"
+    },
+    {
+        "username": "admin",
+        "ip": "192.168.1.10",
+        "event": "failed_login"
+    }
+]
+```
+
+Python:
+
+```python
+import json
+
+with open("security.json", "r") as file:
+
+    events = json.load(file)
+
+for event in events:
+
+    print(event["username"])
+    print(event["ip"])
+    print(event["event"])
+```
+
+---
+
+# Count Failed Logins
+
+```python
+import json
+
+failed = 0
+
+with open("security.json", "r") as file:
+
+    events = json.load(file)
+
+for event in events:
+
+    if event["event"] == "failed_login":
+
+        failed = failed + 1
+
+print("Failed logins:", failed)
+```
+
+Output:
+
+```text
+Failed logins: 2
+```
+
+---
+
+# 4.4 Event Categorization
+
+## What is event categorization?
+
+It means **putting security events into categories**.
+
+For example:
+
+```text
+Login events
+File events
+Network events
+Malware events
+Error events
+```
+
+Suppose we have:
+
+```text
+failed_login
+successful_login
+file_access
+malware_detected
+```
+
+We can categorize them.
+
+---
+
+## Simple Categorization
+
+```python
+event = "failed_login"
+
+if event == "failed_login":
+    print("Category: Authentication")
+
+elif event == "file_access":
+    print("Category: File Activity")
+
+elif event == "malware_detected":
+    print("Category: Malware")
+
+else:
+    print("Category: Other")
+```
+
+Output:
+
+```text
+Category: Authentication
+```
+
+---
+
+# Event Severity
+
+We can also categorize events by severity.
+
+For example:
+
+```text
+INFO
+LOW
+MEDIUM
+HIGH
+CRITICAL
+```
+
+Example:
+
+```python
+event = "failed_login"
+count = 6
+
+if event == "failed_login" and count >= 5:
+    severity = "HIGH"
+
+elif event == "failed_login":
+    severity = "LOW"
+
+else:
+    severity = "INFO"
+
+print("Severity:", severity)
+```
+
+Output:
+
+```text
+Severity: HIGH
+```
+
+---
+
+# Why Categorization Matters
+
+Imagine a SOC receives:
+
+```text
+100,000 events
+```
+
+An analyst doesn't want to manually read every event.
+
+Automation can organize them:
+
+```text
+100,000 Events
+      ↓
+ ┌────┴─────┐
+ ↓          ↓
+Normal    Suspicious
+ ↓          ↓
+Info      Alerts
+```
+
+Then the analyst can focus on important events.
+
+---
+
+# 4.5 Alert Generation
+
+## What is an alert?
+
+An **alert** is a notification that something potentially important has happened.
+
+Example:
+
+```text
+5 failed login attempts
+```
+
+could produce:
+
+```text
+ALERT: Multiple failed login attempts
+```
+
+---
+
+## Simple Alert
+
+```python
+failed = 5
+
+if failed >= 5:
+
+    print("ALERT: Multiple failed login attempts")
+
+else:
+
+    print("No alert")
+```
+
+Output:
+
+```text
+ALERT: Multiple failed login attempts
+```
+
+---
+
+# Alert with IP Address
+
+```python
+ip = "192.168.1.10"
+failed = 5
+
+if failed >= 5:
+
+    print("ALERT")
+    print("IP:", ip)
+    print("Failed attempts:", failed)
+```
+
+Output:
+
+```text
+ALERT
+IP: 192.168.1.10
+Failed attempts: 5
+```
+
+---
+
+# 4.6 Complete Security Data Processing Example
+
+Now let's combine the concepts.
+
+Suppose:
+
+```text
+security.csv
+```
+
+contains:
+
+```text
+username,ip,event
+alice,192.168.1.10,failed_login
+bob,192.168.1.20,successful_login
+admin,192.168.1.10,failed_login
+root,192.168.1.10,failed_login
+test,192.168.1.10,failed_login
+```
+
+We want:
+
+```text
+Read CSV
+ ↓
+Find failed logins
+ ↓
+Group by IP
+ ↓
+Count attempts
+ ↓
+Generate alert
+```
+
+Code:
+
+```python
+import csv
+from collections import Counter
+
+failed_ips = []
+
+with open("security.csv", "r") as file:
+
+    reader = csv.DictReader(file)
+
+    for row in reader:
+
+        if row["event"] == "failed_login":
+
+            failed_ips.append(row["ip"])
+
+
+counts = Counter(failed_ips)
+
+print("SECURITY REPORT")
+print("----------------")
+
+for ip, count in counts.items():
+
+    print(ip, "→", count, "failed attempts")
+
+    if count >= 3:
+
+        print("ALERT: Suspicious activity")
+```
+
+Output:
+
+```text
+SECURITY REPORT
+----------------
+192.168.1.10 → 4 failed attempts
+ALERT: Suspicious activity
+```
+
+---
+
+# 4.7 Understanding the Complete Code
+
+### Import CSV
+
+```python
+import csv
+```
+
+Allows Python to read CSV files.
+
+### Import Counter
+
+```python
+from collections import Counter
+```
+
+Allows us to count repeated values.
+
+### Create list
+
+```python
+failed_ips = []
+```
+
+Stores IP addresses associated with failed logins.
+
+### Open file
+
+```python
+with open("security.csv", "r") as file:
+```
+
+Opens the CSV file for reading.
+
+### Create reader
+
+```python
+reader = csv.DictReader(file)
+```
+
+Reads each CSV row as a dictionary.
+
+Example:
+
+```python
+{
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "event": "failed_login"
+}
+```
+
+### Loop
+
+```python
+for row in reader:
+```
+
+Processes each row.
+
+### Check event
+
+```python
+if row["event"] == "failed_login":
+```
+
+Only process failed login events.
+
+### Store IP
+
+```python
+failed_ips.append(row["ip"])
+```
+
+Add the IP to our list.
+
+### Count
+
+```python
+counts = Counter(failed_ips)
+```
+
+Count how many times each IP appears.
+
+### Generate report
+
+```python
+for ip, count in counts.items():
+```
+
+Process each IP and its count.
+
+### Generate alert
+
+```python
+if count >= 3:
+```
+
+If an IP has 3 or more failures, generate a warning.
+
+---
+
+# 4.8 CSV vs JSON
+
+| Feature        | CSV                  | JSON                               |
+| -------------- | -------------------- | ---------------------------------- |
+| Best for       | Tables               | Structured/nested data             |
+| Human-readable | Yes                  | Yes                                |
+| Python module  | `csv`                | `json`                             |
+| Example        | Rows/columns         | Objects/lists                      |
+| Nested data    | Not convenient       | Very good                          |
+| Common use     | Reports/data exports | APIs/configuration/security events |
+
+### Simple rule
+
+Remember:
+
+```text
+CSV → Table
+JSON → Structured objects
+```
+
+---
+
+# 4.9 Complete Security Automation Flow
+
+Now connect this topic with your previous topics.
+
+```text
+          SECURITY DATA
+                ↓
+        ┌───────────────┐
+        │   COLLECT     │
+        └───────────────┘
+                ↓
+        ┌───────────────┐
+        │    PARSE      │
+        └───────────────┘
+                ↓
+        ┌───────────────┐
+        │   EXTRACT     │
+        └───────────────┘
+                ↓
+        ┌───────────────┐
+        │  CATEGORIZE   │
+        └───────────────┘
+                ↓
+        ┌───────────────┐
+        │   CORRELATE   │
+        └───────────────┘
+                ↓
+        ┌───────────────┐
+        │  GENERATE     │
+        │    ALERT      │
+        └───────────────┘
+                ↓
+           SOC ANALYST
+```
+
+---
+
+# 4.10 Practical Project
+
+## Build a Security Event Analyzer
+
+Create:
+
+```text
+security.csv
+```
+
+Put:
+
+```text
+username,ip,event
+alice,10.0.0.5,failed_login
+bob,10.0.0.8,successful_login
+admin,10.0.0.5,failed_login
+root,10.0.0.5,failed_login
+test,10.0.0.5,failed_login
+john,10.0.0.10,failed_login
+```
+
+Create:
+
+```text
+analyzer.py
+```
+
+Use:
+
+```python
+import csv
+from collections import Counter
+
+failed_ips = []
+
+with open("security.csv", "r") as file:
+
+    reader = csv.DictReader(file)
+
+    for row in reader:
+
+        if row["event"] == "failed_login":
+
+            failed_ips.append(row["ip"])
+
+
+counts = Counter(failed_ips)
+
+
+print("SECURITY REPORT")
+print("----------------")
+
+print("Total failed logins:", len(failed_ips))
+
+print()
+
+for ip, count in counts.items():
+
+    print(ip, "→", count, "failed attempts")
+
+    if count >= 3:
+
+        print("ALERT: Suspicious activity")
+```
+
+Expected result:
+
+```text
+SECURITY REPORT
+----------------
+Total failed logins: 5
+
+10.0.0.5 → 4 failed attempts
+ALERT: Suspicious activity
+
+10.0.0.10 → 1 failed attempts
+```
+
+---
+
+# 🧠 What You Must Remember
+
+| Topic                    | Simple meaning                  |
+| ------------------------ | ------------------------------- |
+| **Structured data**      | Organized information           |
+| **CSV**                  | Data in rows and columns        |
+| **JSON**                 | Structured objects/data         |
+| **Event categorization** | Put events into groups          |
+| **Alert generation**     | Notify when a rule is triggered |
+
+### The most important mental model:
+
+```text
+DATA
+ ↓
+READ
+ ↓
+PARSE
+ ↓
+UNDERSTAND
+ ↓
+CATEGORIZE
+ ↓
+COUNT / CORRELATE
+ ↓
+CHECK RULE
+ ↓
+ALERT
+ ↓
+REPORT
+```
+
+This topic connects directly with the previous **Log Processing Automation** topic. Together, they form the basic foundation for a Python-based **SOC log/event analyzer**.
+
+I can next teach **5. Security Alerting & Incident Response Automation** with simple Python theory and practical projects.
