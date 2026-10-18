@@ -10,9 +10,6 @@ Cloud computing is the delivery of computing services over the internet, such as
 
 In simple words, cloud computing means using another company's computers and services through the internet whenever you need them.
 
-[Cloud Computing Explained for Absolute Beginners ⭐ | by Sakshi | Mar, 2026 | Medium](https://images.openai.com/static-rsc-4/yg4jMrthkXgclAXttX8rSpw77Z0MedLfMM5nPVihpmb2JqBeqXkSbrAmHDsrReUtTPYVqy_wtNGah-n1xg_h-vzaQWdPz3q06Xn1yXdtAV_W3POFZzpm6pfm1u5LJMvuLHYO0Y-WNOaoptjkoFfDQjNof4AO4WcqmSphp6Od5cI?purpose=inline)
-
-[medium.com](https://medium.com/%40sakshijadhav20009/cloud-computing-explained-for-absolute-beginners-d29add2843e1?utm_source=chatgpt.com)
 
 ### Example
 
