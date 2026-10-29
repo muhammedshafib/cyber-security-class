@@ -94,20 +94,6 @@ Advanced Security
 
 ---
 
-## 🔥 Cybersecurity Areas
-
-```text
-████████████████████░░  Networking
-██████████████████░░░░  Linux
-████████████████░░░░░░  Web Security
-██████████████░░░░░░░░  SOC / Blue Team
-██████████████░░░░░░░░  OSINT
-████████████░░░░░░░░░░  Vulnerability Management
-██████████░░░░░░░░░░░░  Malware Analysis
-```
-
----
-
 ## 🚀 Projects
 
 ### 🔎 Network Analysis Lab
