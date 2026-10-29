@@ -159,28 +159,6 @@ Currently learning how to:
 
 ---
 
-## 📚 My Learning Roadmap
-
-* [x] Cybersecurity Fundamentals
-* [x] CIA Triad
-* [x] Threats & Vulnerabilities
-* [x] Basic Networking
-* [x] OSI & TCP/IP Models
-* [x] Common Network Protocols
-* [x] IP Addressing
-* [x] Linux Fundamentals
-* [ ] Advanced Networking
-* [ ] SIEM & Log Analysis
-* [ ] SOC Operations
-* [ ] Incident Response
-* [ ] Threat Hunting
-* [ ] Digital Forensics
-* [ ] Advanced Web Security
-* [ ] Bug Bounty
-* [ ] Security Certifications
-
----
-
 ## 🧪 Hands-On Practice
 
 ```text
