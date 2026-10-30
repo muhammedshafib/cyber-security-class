@@ -29,7 +29,7 @@
 
 ## 👨‍💻 About
 
-I am training in cybersecurity at **Brototype**, building skills through structured modules, hands-on labs and practical security exercises. This repository is my documented learning journey: notes, scripts, lab write-ups and study material, organised module by module.
+I am a cybersecurity learner, building skills through structured modules, hands-on labs and practical security exercises. This repository is my documented learning journey: notes, scripts, lab write-ups and study material, organised module by module.
 
 I am focused on becoming a security analyst / junior security engineer with strengths in:
 
