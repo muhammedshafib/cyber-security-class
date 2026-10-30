@@ -81,8 +81,20 @@ My focus is on cybersecurity fundamentals, network security, Python programming,
 
 ## 🤝 Connect
 
-- **GitHub:** [muhammedshafib](https://github.com/muhammedshafib)
-- **LinkedIn:** Add your LinkedIn profile URL here.
+<p align="center">
+
+<a href="https://github.com/muhammedshafib">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/muhammedshafib">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://www.naukri.com/mnjuser/profile?id=&altresid">
+<img src="https://img.shields.io/badge/Naugri-YourColor?style=for-the-badge&logo=naugri&logoColor=white" alt="Naugri Badge"/>   
+
+</p>
 
 ---
 
