@@ -120,13 +120,6 @@ Each module folder has its own `README.md` listing what was covered, what I buil
 Everything in this repository is for **educational purposes only** and was performed in lab environments or systems I am authorised to test. Do not use any technique shown here against systems you do not own or have explicit written permission to assess.
 
 ---
-
-## 📄 License
-
-Released under the [MIT License](LICENSE).
-
----
-
 <div align="center">
 
 **Learn · Practise · Build · Document · Improve**
