@@ -1,194 +1,89 @@
-# 🛡️ Hey, I'm Mohammed Shafi
+# 🔐 Cybersecurity Portfolio
 
-### 🔐 Cybersecurity Learner | SOC Analyst Aspirant | Security Enthusiast
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=CYBER%20SECURITY&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Learning+Cybersecurity+%F0%9F%94%90;Future+SOC+Analyst+%F0%9F%9B%A1%EF%B8%8F;Exploring+Linux+%7C+Networking+%7C+Security;Building+%26+Breaking+Things+to+Learn!" />
-</p>
+### Muhammed Shafi
+**Aspiring Cybersecurity Professional | Python | Network Security | Cloud Security**
 
 ---
 
 ## 👨‍💻 About Me
 
-I'm a passionate **Cybersecurity learner** focused on understanding how networks, systems, applications, and security technologies work.
+I'm currently pursuing cybersecurity training at **Brototype**, developing technical knowledge through structured learning, hands-on labs, and practical security exercises.
 
-My goal is to continuously improve my practical cybersecurity skills and build a career in the security field.
-
-```text
-🔐 Cybersecurity
-🌐 Networking
-🐧 Linux
-🛡️ SOC & Blue Team
-🔎 OSINT
-🧪 Vulnerability Analysis
-🌐 Web Security
-💻 Python
-```
+My focus is on cybersecurity fundamentals, network security, Python programming, cloud security, and security operations.
 
 ---
 
-## 🎯 My Cybersecurity Journey
+## 🛡️ Core Learning Areas
 
-```text
-Networking
-    ↓
-Linux
-    ↓
-Cybersecurity Fundamentals
-    ↓
-Web & Network Security
-    ↓
-SOC / Blue Team
-    ↓
-Threat Detection
-    ↓
-Incident Response
-    ↓
-Advanced Security
-```
+- Cybersecurity Fundamentals
+- Network Security
+- Linux & Windows Security
+- Python for Cybersecurity
+- Security Automation
+- Cryptography
+- AWS Cloud Security
+- IAM & Active Directory
+- Security Monitoring & Incident Response
 
 ---
 
-## 🧠 Currently Learning
+## 💻 Technical Skills & Tools
 
-| Area                        | Topics                                                         |
-| --------------------------- | -------------------------------------------------------------- |
-| 🌐 Networking               | TCP/IP, OSI, DNS, DHCP, HTTP/HTTPS, Subnetting                 |
-| 🐧 Linux                    | Linux commands, permissions, processes, networking             |
-| 🔐 Security                 | CIA Triad, Threats, Vulnerabilities, Risk, Security Principles |
-| 🛡️ SOC                     | Log Analysis, SIEM, Alerts, Incident Investigation             |
-| 🔎 OSINT                    | Reconnaissance, Search Techniques, Threat Research             |
-| 🌐 Web Security             | OWASP concepts, Authentication, Path Traversal                 |
-| 🦠 Malware                  | Malware fundamentals and safe analysis                         |
-| 🧪 Vulnerability Management | CVE, Risk Assessment, Patch Management                         |
-| 💻 Programming              | Python, Bash and basic scripting                               |
+| Category | Technologies / Concepts |
+|---|---|
+| Programming | Python |
+| Networking | TCP/IP, DNS |
+| Operating Systems | Linux, Windows |
+| Cloud | AWS, IAM |
+| Security | Cryptography, Access Control, Log Analysis |
+| Tools | Git, GitHub, Linux Command Line |
 
 ---
 
-## 🛠️ Tools & Technologies
+## 📚 Learning Modules
 
-### 🔐 Security
-
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge\&logo=kalilinux\&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge\&logo=wireshark\&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge\&logo=burpsuite\&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge\&logo=metasploit\&logoColor=white)
-
-### 💻 Programming
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-121011?style=for-the-badge\&logo=gnubash\&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge\&logo=c\&logoColor=white)
-
-### 🌐 Networking
-
-![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge\&logo=cisco\&logoColor=white)
-![TCP/IP](https://img.shields.io/badge/TCP%2FIP-Networking-0A0A0A?style=for-the-badge)
-
-### 🐧 Operating Systems
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge\&logo=linux\&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge\&logo=windows\&logoColor=white)
+| Module | Subject |
+|---|---|
+| [Module 01](Module-01/) | Cybersecurity Fundamentals |
+| [Module 02](Module-02/) | Course Learning Notes |
+| [Module 03](Module-03/) | Course Learning Notes |
+| [Module 04](Module-04/) | Course Learning Notes |
+| [Module 05](Module-05/) | Python Programming for Cybersecurity |
+| [Module 06](Module-06/) | Security Automation & Scripting |
+| [Module 07](Module-07/) | Cryptography & Secure Communication |
+| [Module 08](Module-08/) | Web Technology & Secure Development |
+| [Module 09](Module-09/) | Course Learning Notes |
+| [Module 10](Module-10/) | Active Directory Administration |
 
 ---
 
-## 🚀 Projects
+## 🧪 Practical Labs & Projects
 
-### 🔎 Network Analysis Lab
+- [Hands-on Tasks](Hands-on%20Task/)
+- [Paper 1 – Study Materials](Paper-1/)
 
-> Learning to analyze network traffic and understand protocols using Wireshark.
-
-**Topics:**
-
-* Packet analysis
-* TCP/IP
-* DNS
-* HTTP/HTTPS
-* Network troubleshooting
+**Project Focus:**
+- Python Security Tools
+- AWS Cloud Security Assessment
+- Network Security Labs
 
 ---
 
-### 🛡️ Cybersecurity Home Lab
+## 🎯 Current Focus
 
-> Building an isolated virtual lab for cybersecurity learning and safe security testing.
-
-**Environment:**
-
-```text
-┌─────────────────────┐
-│    Kali Linux       │
-│  Security Tools     │
-└──────────┬──────────┘
-           │
-           │ Isolated Lab
-           │
-┌──────────▼──────────┐
-│   Test Machine      │
-│   Vulnerable Apps   │
-└─────────────────────┘
-```
+- Strengthening cybersecurity and networking fundamentals.
+- Developing Python-based security utilities.
+- Practising AWS security and IAM configurations.
+- Learning security monitoring and incident response.
+- Building practical cybersecurity projects.
 
 ---
 
-### 🔐 Security Research
+## 🤝 Connect
 
-Currently learning how to:
-
-* Research CVEs
-* Understand vulnerabilities
-* Analyze security incidents
-* Perform OSINT investigations
-* Write vulnerability reports
-* Study common attack techniques safely
+- **GitHub:** [muhammedshafib](https://github.com/muhammedshafib)
+- **LinkedIn:** Add your LinkedIn profile URL here.
 
 ---
 
-## 🧪 Hands-On Practice
-
-```text
-🔹 Packet Capture Analysis
-🔹 Network Troubleshooting
-🔹 Subnet Calculations
-🔹 Linux Security Labs
-🔹 Vulnerability Research
-🔹 OSINT Investigations
-🔹 Security Log Analysis
-🔹 Incident Investigation
-🔹 Web Security Labs
-🔹 CTF Challenges
-```
-
-> ⚠️ All security testing is performed only in authorized labs, CTFs, and environments where I have permission.
-
-
-
----
-
-## 📫 Connect With Me
-
-<p align="center">
-
-<a href="https://github.com/muhammedshafib">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/muhammedshafib">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://www.naukri.com/mnjuser/profile?id=&altresid">
-<img src="https://img.shields.io/badge/Naugri-YourColor?style=for-the-badge&logo=naugri&logoColor=white" alt="Naugri Badge"/>   
-
-</p>
-
----
-
-<p align="center">
-
-### 🛡️ Keep Learning. Keep Building. Keep Securing. 🚀
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/>
-
-</p>
+**Learn | Practise | Build | Document | Improve**
