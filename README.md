@@ -59,7 +59,7 @@ My focus is on cybersecurity fundamentals, network security, Python programming,
 
 ## 🧪 Practical Labs & Projects
 
-- [Hands-on Tasks](Hands-on%20Task/)
+- [Hands-on-Tasks](Hands-on%20Task/)
 - [Paper 1 – Study Materials](Paper-1/)
 
 **Project Focus:**
