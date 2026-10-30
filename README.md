@@ -1,101 +1,125 @@
+<div align="center">
+
 # 🔐 Cybersecurity Portfolio
 
 ### Muhammed Shafi
-**Aspiring Cybersecurity Professional | Python | Network Security | Cloud Security**
+
+**Aspiring Cybersecurity Professional · Python · Network Security · Cloud Security**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+
+[LinkedIn](https://www.linkedin.com/in/muhammed-shafi-b-77b040445/) · [GitHub](https://github.com/muhammedshafib)
+
+</div>
 
 ---
 
-## 👨‍💻 About Me
+## 👨‍💻 About
 
-I'm currently pursuing cybersecurity training at **Brototype**, developing technical knowledge through structured learning, hands-on labs, and practical security exercises.
+I am training in cybersecurity at **Brototype**, building skills through structured modules, hands-on labs and practical security exercises. This repository is my documented learning journey: notes, scripts, lab write-ups and study material, organised module by module.
 
-My focus is on cybersecurity fundamentals, network security, Python programming, cloud security, and security operations.
+I am focused on becoming a security analyst / junior security engineer with strengths in:
 
----
-
-## 🛡️ Core Learning Areas
-
-- Cybersecurity Fundamentals
-- Network Security
-- Linux & Windows Security
-- Python for Cybersecurity
-- Security Automation
-- Cryptography
-- AWS Cloud Security
-- IAM & Active Directory
-- Security Monitoring & Incident Response
-
----
-
-## 💻 Technical Skills & Tools
-
-| Category | Technologies / Concepts |
-|---|---|
-| Programming | Python |
-| Networking | TCP/IP, DNS |
-| Operating Systems | Linux, Windows |
-| Cloud | AWS, IAM |
-| Security | Cryptography, Access Control, Log Analysis |
-| Tools | Git, GitHub, Linux Command Line |
+- Network and system security fundamentals
+- Python for security automation
+- Cloud security on AWS (IAM, access control)
+- Identity management with Active Directory
+- Monitoring, log analysis and incident response basics
 
 ---
 
 ## 📚 Learning Modules
 
-| Module | Subject |
-|---|---|
-| [Module 01](Module-01/) | Cybersecurity Fundamentals |
-| [Module 02](Module-02/) | Course Learning Notes |
-| [Module 03](Module-03/) | Course Learning Notes |
-| [Module 04](Module-04/) | Course Learning Notes |
-| [Module 05](Module-05/) | Python Programming for Cybersecurity |
-| [Module 06](Module-06/) | Security Automation & Scripting |
-| [Module 07](Module-07/) | Cryptography & Secure Communication |
-| [Module 08](Module-08/) | Web Technology & Secure Development |
-| [Module 09](Module-09/) | Course Learning Notes |
-| [Module 10](Module-10/) | Active Directory Administration |
+| # | Module | Focus |
+|---|--------|-------|
+| 01 | [Module 01](Module-01/) | Cybersecurity Fundamentals |
+| 02 | [Module 02](Module-02/) | <!-- TODO: add topic --> |
+| 03 | [Module 03](Module-03/) | <!-- TODO: add topic --> |
+| 04 | [Module 04](Module-04/) | <!-- TODO: add topic --> |
+| 05 | [Module 05](Module-05/) | Python Programming for Cybersecurity |
+| 06 | [Module 06](Module-06/) | Security Automation & Scripting |
+| 07 | [Module 07](Module-07/) | Cryptography & Secure Communication |
+| 08 | [Module 08](Module-08/) | Web Technology & Secure Development |
+| 09 | [Module 09](Module-09/) | <!-- TODO: add topic --> |
+| 10 | [Module 10](Module-10/) | Active Directory Administration |
 
 ---
 
-## 🧪 Practical Labs & Projects
+## 🧪 Labs & Projects
 
-- [Hands-on-Tasks](Hands-on%20Task/)
-- [Paper 1 – Study Materials](Paper-1/)
+| Work | Description |
+|------|-------------|
+| [Hands-on Tasks](Hands-on-Tasks/) | Practical lab exercises completed during the course |
+| [Paper 1 – Study Materials](Paper-1/) | Exam preparation notes and reference material |
 
-**Project Focus:**
-- Python Security Tools
-- AWS Cloud Security Assessment
-- Network Security Labs
+**Project focus areas**
+
+- Python security tools
+- AWS cloud security assessment
+- Network security labs
+
+<!-- Add each finished project as a row above, with a one-line description and link to its own README. -->
+
+---
+
+## 💻 Skills & Tools
+
+| Category | Technologies / Concepts |
+|----------|------------------------|
+| Programming | Python |
+| Networking | TCP/IP, DNS |
+| Operating Systems | Linux, Windows |
+| Cloud | AWS, IAM |
+| Identity | Active Directory |
+| Security | Cryptography, Access Control, Log Analysis |
+| Tools | Git, GitHub, Linux command line |
+
+---
+
+## 🗂️ Repository Structure
+
+```text
+cyber-security-class/
+├── Module-01/ … Module-10/   # Course notes, scripts and labs per module
+├── Hands-on-Tasks/           # Practical lab exercises
+├── Paper-1/                  # Study materials
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+Each module folder has its own `README.md` listing what was covered, what I built, and what I learned.
 
 ---
 
 ## 🎯 Current Focus
 
-- Strengthening cybersecurity and networking fundamentals.
-- Developing Python-based security utilities.
-- Practising AWS security and IAM configurations.
-- Learning security monitoring and incident response.
-- Building practical cybersecurity projects.
+- Strengthening cybersecurity and networking fundamentals
+- Building Python-based security utilities
+- Practising AWS security and IAM configuration
+- Learning security monitoring and incident response
+- Turning labs into documented, reproducible projects
 
 ---
 
-## 🤝 Connect
+## ⚠️ Disclaimer
 
-<p align="center">
-
-<a href="https://github.com/muhammedshafib">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/muhammedshafib11">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://www.naukri.com/mnjuser/profile?id=&altresid">
-<img src="https://img.shields.io/badge/Naugri-YourColor?style=for-the-badge&logo=naugri&logoColor=white" alt="Naugri Badge"/>   
-
-</p>
+Everything in this repository is for **educational purposes only** and was performed in lab environments or systems I am authorised to test. Do not use any technique shown here against systems you do not own or have explicit written permission to assess.
 
 ---
 
-**Learn | Practise | Build | Document | Improve**
+## 📄 License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+**Learn · Practise · Build · Document · Improve**
+
+</div>
