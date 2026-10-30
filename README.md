@@ -2,7 +2,7 @@
 
 # 🔐 Cybersecurity Portfolio
 
-### Muhammed Shafi
+### Muhammed Shafi B
 
 **Aspiring Cybersecurity Professional · Python · Network Security · Cloud Security**
 
